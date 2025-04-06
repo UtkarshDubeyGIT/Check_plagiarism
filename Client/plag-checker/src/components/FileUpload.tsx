@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import { Textarea } from "./ui/textarea";
 import { FileUpload } from "./ui/file-upload";
  
@@ -7,7 +7,7 @@ import { FileUpload } from "./ui/file-upload";
 import { Modal, ModalTrigger } from "./ui/animated-modal";
 
 const FileUploadBox: React.FC = () => {
-  const [file, setFiles] = useState<File | null>(null);
+//   const [file, setFiles] = useState<File | null>(null);
 
   // const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
   //     if (event.target.files && event.target.files.length > 0) {
@@ -40,7 +40,7 @@ const FileUploadBox: React.FC = () => {
         </Modal>
       </div>
 
-      {file && <p>Selected file: {file.name}</p>}
+      {/* {file && <p>Selected file: {file.name}</p>} */}
     </div>
   );
 };
